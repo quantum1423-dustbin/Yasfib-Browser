@@ -136,7 +136,7 @@ namespace Yasfib
             return lines;
         }
         public static bool isChinese = true;
-        public static string versionNumber = "4.1.6-r3";
+        public static string versionNumber = "4.1.6-r4";
         void getautocomplete()
         {
             //try
