@@ -92,8 +92,9 @@
     <Reference Include="ColorProgressBar, Version=1.0.1583.18785, Culture=neutral" />
     <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.2, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="MdiTabControl, Version=1.0.2527.15294, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="OpenGFX">
-      <HintPath>..\..\Skybound.Gecko\bin\Debug 1.9\OpenGFX.dll</HintPath>
+    <Reference Include="OpenGeckoSharp, Version=0.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OpenGeckoSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

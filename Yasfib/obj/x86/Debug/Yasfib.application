@@ -4,14 +4,14 @@
   <description asmv2:publisher="Yasfib" asmv2:product="Yasfib" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Yasfib.exe.manifest" size="7391">
+    <dependentAssembly dependencyType="install" codebase="Yasfib.exe.manifest" size="7439">
       <assemblyIdentity name="Yasfib.exe" version="3.9.5.5" publicKeyToken="0000000000000000" language="zh-Hans" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jwC2g6KpLUoUX1TuNegfVUMA6ns=</dsig:DigestValue>
+        <dsig:DigestValue>iATntdc1YSiawN3x1HEwdS3eMpw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

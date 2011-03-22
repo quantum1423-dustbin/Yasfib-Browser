@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OpenGFX.dll" size="256512">
-      <assemblyIdentity name="OpenGFX" version="1.9.2.0" publicKeyToken="3209AC31600D1857" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Skybound.Gecko.dll" size="255488">
+      <assemblyIdentity name="Skybound.Gecko" version="1.9.2.0" publicKeyToken="3209AC31600D1857" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>UUW2D5En8K57tKT6VgnM4z9JCGo=</dsig:DigestValue>
+        <dsig:DigestValue>Vs1CyGn1bb5lF206ZDnIDQUUorw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>V6qiTPrjytaGkHZMRrqDcFvOfmc=</dsig:DigestValue>
+        <dsig:DigestValue>IZiTOz7zkJtgSiYL8UfKohrn7mM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

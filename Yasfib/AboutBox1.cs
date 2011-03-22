@@ -17,6 +17,7 @@ namespace Yasfib
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;*/
+            this.labelVersion.Text = Yasfib.Form1.versionNumber;
         }
 
         #region Assembly Attribute Accessors
