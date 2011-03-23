@@ -79,12 +79,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.mainCM = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.openInNewTabToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookmarkThisPageToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSourceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.browserCM = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.openInNewTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reloadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mcm = new System.Windows.Forms.ContextMenu();
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
@@ -105,9 +108,6 @@
             this.progressBar1 = new DevComponents.DotNetBar.Controls.ProgressBarX();
             this.gradientDown = new System.Windows.Forms.Timer(this.components);
             this.gradientUp = new System.Windows.Forms.Timer(this.components);
-            this.reloadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.openInNewTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openInNewTabToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -582,6 +582,13 @@
             this.mainCM.Name = "mainCM";
             this.mainCM.Size = new System.Drawing.Size(180, 158);
             // 
+            // openInNewTabToolStripMenuItem1
+            // 
+            this.openInNewTabToolStripMenuItem1.Name = "openInNewTabToolStripMenuItem1";
+            this.openInNewTabToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
+            this.openInNewTabToolStripMenuItem1.Text = "Open in new tab";
+            this.openInNewTabToolStripMenuItem1.Click += new System.EventHandler(this.openInNewTabToolStripMenuItem1_Click);
+            // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
@@ -624,6 +631,18 @@
             this.reloadToolStripMenuItem1});
             this.browserCM.Name = "contextMenuStrip3";
             this.browserCM.Size = new System.Drawing.Size(162, 48);
+            // 
+            // openInNewTabToolStripMenuItem
+            // 
+            this.openInNewTabToolStripMenuItem.Name = "openInNewTabToolStripMenuItem";
+            this.openInNewTabToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.openInNewTabToolStripMenuItem.Text = "Open in new tab";
+            // 
+            // reloadToolStripMenuItem1
+            // 
+            this.reloadToolStripMenuItem1.Name = "reloadToolStripMenuItem1";
+            this.reloadToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.reloadToolStripMenuItem1.Text = "Reload";
             // 
             // mcm
             // 
@@ -843,25 +862,6 @@
             // 
             this.gradientUp.Interval = 150;
             this.gradientUp.Tick += new System.EventHandler(this.gradientUp_Tick);
-            // 
-            // reloadToolStripMenuItem1
-            // 
-            this.reloadToolStripMenuItem1.Name = "reloadToolStripMenuItem1";
-            this.reloadToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
-            this.reloadToolStripMenuItem1.Text = "Reload";
-            // 
-            // openInNewTabToolStripMenuItem
-            // 
-            this.openInNewTabToolStripMenuItem.Name = "openInNewTabToolStripMenuItem";
-            this.openInNewTabToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.openInNewTabToolStripMenuItem.Text = "Open in new tab";
-            // 
-            // openInNewTabToolStripMenuItem1
-            // 
-            this.openInNewTabToolStripMenuItem1.Name = "openInNewTabToolStripMenuItem1";
-            this.openInNewTabToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
-            this.openInNewTabToolStripMenuItem1.Text = "Open in new tab";
-            this.openInNewTabToolStripMenuItem1.Click += new System.EventHandler(this.openInNewTabToolStripMenuItem1_Click);
             // 
             // Form1
             // 
