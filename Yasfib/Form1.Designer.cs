@@ -40,7 +40,6 @@
             this.go = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button8 = new DevComponents.DotNetBar.ButtonX();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.添加新IE壳标签ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -71,12 +70,6 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.textBox2 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBox1 = new DevComponents.DotNetBar.Controls.TextBoxDropDown();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.mainCM = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openInNewTabToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,18 +89,25 @@
             this.menuItem5 = new System.Windows.Forms.MenuItem();
             this.menuItem6 = new System.Windows.Forms.MenuItem();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button5 = new System.Windows.Forms.Button();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.tabControl1 = new MdiTabControl.TabControl();
             this.findbox = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tosearch = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.progressBar1 = new DevComponents.DotNetBar.Controls.ProgressBarX();
             this.gradientDown = new System.Windows.Forms.Timer(this.components);
             this.gradientUp = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.buttonX1 = new System.Windows.Forms.PictureBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -115,6 +115,7 @@
             this.mainCM.SuspendLayout();
             this.browserCM.SuspendLayout();
             this.findbox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonX1)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -207,17 +208,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(358, 24);
             this.panel2.TabIndex = 28;
-            // 
-            // button8
-            // 
-            this.button8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.button8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button8.Location = new System.Drawing.Point(172, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(40, 25);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "PM";
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // printDialog1
             // 
@@ -463,109 +453,6 @@
             this.timer2.Interval = 1500;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick_1);
             // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.textBox2.Border.Class = "TextBoxBorder";
-            this.textBox2.Location = new System.Drawing.Point(647, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(114, 22);
-            this.textBox2.TabIndex = 23;
-            this.textBox2.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty;
-            this.textBox2.WatermarkText = "Google";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            // 
-            // 
-            // 
-            this.textBox1.BackgroundStyle.BackColorGradientType = DevComponents.DotNetBar.eGradientType.Radial;
-            this.textBox1.BackgroundStyle.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Tile;
-            this.textBox1.BackgroundStyle.Class = "TextBoxBorder";
-            this.textBox1.ButtonDropDown.Enabled = false;
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(241, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(364, 25);
-            this.textBox1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBox1.ThemeAware = true;
-            this.textBox1.WatermarkBehavior = DevComponents.DotNetBar.eWatermarkBehavior.HideNonEmpty;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
-            this.textBox1.MouseCaptureChanged += new System.EventHandler(this.textBox1_MouseCaptureChanged);
-            this.textBox1.MouseEnter += new System.EventHandler(this.textBox1_MouseEnter);
-            this.textBox1.MouseLeave += new System.EventHandler(this.textBox1_MouseLeave);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::Yasfib.Properties.Resources.back2;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Location = new System.Drawing.Point(73, -1);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 30);
-            this.button3.TabIndex = 7;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.BackgroundImage = global::Yasfib.Properties.Resources.reload1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(217, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 24);
-            this.button1.TabIndex = 12;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.reloadToolStripMenuItem_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::Yasfib.Properties.Resources.forward2;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Location = new System.Drawing.Point(101, -1);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(30, 30);
-            this.button4.TabIndex = 8;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackgroundImage = global::Yasfib.Properties.Resources.favicon;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(760, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(23, 22);
-            this.button2.TabIndex = 17;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button6_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -580,7 +467,7 @@
             this.bookmarkThisPageToolStripMenuItem1,
             this.viewSourceToolStripMenuItem1});
             this.mainCM.Name = "mainCM";
-            this.mainCM.Size = new System.Drawing.Size(180, 158);
+            this.mainCM.Size = new System.Drawing.Size(180, 136);
             // 
             // openInNewTabToolStripMenuItem1
             // 
@@ -689,32 +576,6 @@
             this.menuItem6.Index = 5;
             this.menuItem6.Text = "Properties";
             // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::Yasfib.Properties.Resources.home;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.Location = new System.Drawing.Point(135, -1);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(30, 30);
-            this.button5.TabIndex = 26;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_2);
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX1.Location = new System.Drawing.Point(733, 32);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(31, 23);
-            this.buttonX1.TabIndex = 28;
-            this.buttonX1.Text = "+";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Alignment = MdiTabControl.TabControl.TabAlignment.Top;
@@ -818,40 +679,13 @@
             // button7
             // 
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Location = new System.Drawing.Point(601, 2);
+            this.button7.Location = new System.Drawing.Point(560, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 25);
+            this.button7.Size = new System.Drawing.Size(44, 25);
             this.button7.TabIndex = 30;
             this.button7.Text = "WH";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button10.BackgroundImage = global::Yasfib.Properties.Resources.stop;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Location = new System.Drawing.Point(217, 2);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(25, 24);
-            this.button10.TabIndex = 31;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click_1);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(657, 440);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.ProgressType = DevComponents.DotNetBar.eProgressItemType.Marquee;
-            this.progressBar1.Size = new System.Drawing.Size(128, 23);
-            this.progressBar1.TabIndex = 32;
-            this.progressBar1.Text = "0/0";
-            this.progressBar1.TextVisible = true;
             // 
             // gradientDown
             // 
@@ -863,6 +697,147 @@
             this.gradientUp.Interval = 150;
             this.gradientUp.Tick += new System.EventHandler(this.gradientUp_Tick);
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBox1.Location = new System.Drawing.Point(205, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(353, 22);
+            this.textBox1.TabIndex = 33;
+            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
+            // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.Green;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button8.Location = new System.Drawing.Point(603, 2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(44, 25);
+            this.button8.TabIndex = 34;
+            this.button8.Text = "PM";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(466, 440);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(317, 22);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 35;
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.Image = global::Yasfib.Properties.Resources.add;
+            this.buttonX1.Location = new System.Drawing.Point(741, 32);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(31, 23);
+            this.buttonX1.TabIndex = 36;
+            this.buttonX1.TabStop = false;
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button10.BackgroundImage = global::Yasfib.Properties.Resources.stop;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Location = new System.Drawing.Point(173, 3);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(25, 24);
+            this.button10.TabIndex = 31;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Yasfib.Properties.Resources.back2;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Location = new System.Drawing.Point(73, -1);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(30, 30);
+            this.button3.TabIndex = 7;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::Yasfib.Properties.Resources.home;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.Location = new System.Drawing.Point(135, -1);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(30, 30);
+            this.button5.TabIndex = 26;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_2);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::Yasfib.Properties.Resources.forward2;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Location = new System.Drawing.Point(101, -1);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(30, 30);
+            this.button4.TabIndex = 8;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.BackgroundImage = global::Yasfib.Properties.Resources.reload1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(173, 3);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 24);
+            this.button1.TabIndex = 12;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.reloadToolStripMenuItem_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackgroundImage = global::Yasfib.Properties.Resources.favicon;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(760, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(23, 22);
+            this.button2.TabIndex = 17;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(653, 3);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(107, 22);
+            this.textBox2.TabIndex = 37;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.go;
@@ -872,20 +847,20 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(784, 462);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.go);
             this.Controls.Add(this.findbox);
-            this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tabControl1);
@@ -917,6 +892,7 @@
             this.browserCM.ResumeLayout(false);
             this.findbox.ResumeLayout(false);
             this.findbox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonX1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -936,9 +912,6 @@
         private System.Windows.Forms.ToolStripMenuItem 添加新IE壳标签ToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Timer timer2;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBox2;
-        private DevComponents.DotNetBar.Controls.TextBoxDropDown textBox1;
-        private DevComponents.DotNetBar.ButtonX button8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button go;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
@@ -962,7 +935,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button button5;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem addTabCtrlTToolStripMenuItem;
@@ -995,13 +967,17 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button10;
-        private DevComponents.DotNetBar.Controls.ProgressBarX progressBar1;
         private System.Windows.Forms.Timer gradientDown;
         private System.Windows.Forms.Timer gradientUp;
         private System.Windows.Forms.ToolStripMenuItem updateYasfibToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openInNewTabToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reloadToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem openInNewTabToolStripMenuItem1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.PictureBox buttonX1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

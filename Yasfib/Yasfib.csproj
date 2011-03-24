@@ -64,11 +64,11 @@
     <TargetZone>Internet</TargetZone>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>FBBA944ECDC267003914F5FCAFCAB2372ABD7632</ManifestCertificateThumbprint>
@@ -80,17 +80,17 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Yasfib_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup />
   <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ColorProgressBar, Version=1.0.1583.18785, Culture=neutral" />
-    <Reference Include="DevComponents.DotNetBar2, Version=7.7.0.2, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="MdiTabControl, Version=1.0.2527.15294, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="OpenGeckoSharp, Version=0.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -168,6 +168,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="app.manifest" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,7 +179,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Yasfib_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\go.png" />
@@ -204,6 +204,7 @@
   <ItemGroup>
     <None Include="Resources\yasfib_normal.png" />
     <None Include="Resources\yasfib_compress.png" />
+    <None Include="Resources\add.png" />
     <Content Include="yasfib_logo.ico" />
     <None Include="Resources\yasfibBackTop.png" />
     <None Include="Resources\yasfibBack1.png" />

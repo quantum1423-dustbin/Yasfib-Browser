@@ -14,7 +14,7 @@ namespace fp
 
             return new Uri(Url).Host;
         }
-        public static bool checkPaypal(string content, string url)
+        public static bool checkAll(string content, string url)
         {
             try
             {
@@ -31,10 +31,6 @@ namespace fp
                 else { return false; }
             }
             catch { }
-            return false;
-        }
-        public static bool checkTaobao(string content, string url)
-        {
             try
             {
                 //System.Windows.Forms.MessageBox.Show(content);
@@ -52,10 +48,6 @@ namespace fp
                 else { return false; }
             }
             catch { }
-            return false;
-        }
-        public static bool checkAlipay(string content, string url)
-        {
             try
             {
                 //System.Windows.Forms.MessageBox.Show(content);
@@ -75,26 +67,6 @@ namespace fp
             catch { }
             return false;
         }
-        public static bool checkFacebook(string content, string url)
-        {
-            try
-            {
-                //System.Windows.Forms.MessageBox.Show(content);
-                if (string2domain(url).ToString() != "www.facebook.com")
-                {
-                    if (content.Contains("<!--CMS大区域开始/标准登录页/标准登录页banner/loginBanner-->") ||
-                        content.Contains("h2 seed=\"auth-alipayMember\">") ||
-                        content.Contains("login.jhtml?style=alipay&amp;goto=") ||
-                        content.Contains("<form name=\"loginForm\" id=\"login\" action=\"https://auth.alipay.com/login/index.htm\" method=\"post\" > "))
-                    {
-                        return true;
-                    }
-                    else { return false; }
-                }
-                else { return false; }
-            }
-            catch { }
-            return false;
-        }
+       
     }
 }

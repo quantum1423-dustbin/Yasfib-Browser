@@ -135,12 +135,12 @@ namespace Yasfib
             }
             return lines;
         }
-        public static bool isChinese = true;
-        public static string versionNumber = "4.1.7-r1";
+        public static bool isChinese = false;
+        public static string versionNumber = "4.1.7-r3";
         void getautocomplete()
         {
-            //try
-            //{
+            try
+            {
             // Create an isntance of XmlTextReader and call Read method to read the file
             XmlTextReader textReader = new XmlTextReader("ac.xml");
             textReader.Read();
@@ -157,8 +157,8 @@ namespace Yasfib
                     //MessageBox.Show(textReader.ReadString());
                 }
             }
-            //}
-            //catch { }
+            }
+            catch { }
         }
         public int aBlockPortNumber = 50029;
         void wf(string filename, string content)
@@ -183,21 +183,26 @@ namespace Yasfib
             rtab();
         }
         void readBM()
+
         {
-            bool running = true;
-            string end = "";
-            TextReader tr = new StreamReader("bookmarks.txt");
-            while (end == end)
+            try
             {
-                end = tr.ReadLine();
-                if (end == null) { break; }
-                string name = end;
-                end = tr.ReadLine();
-                if (end == null) { break; }
-                string url = end;
-                addtoBookmarksMenu(url, name);
+                bool running = true;
+                string end = "";
+                TextReader tr = new StreamReader("bookmarks.txt");
+                while (end == end)
+                {
+                    end = tr.ReadLine();
+                    if (end == null) { break; }
+                    string name = end;
+                    end = tr.ReadLine();
+                    if (end == null) { break; }
+                    string url = end;
+                    addtoBookmarksMenu(url, name);
+                }
+                tr.Close();
             }
-         tr.Close();
+            catch { }
         }
         void addtoBookmarksMenu(string url, string name){
             ToolStripMenuItem newmi = new ToolStripMenuItem();
@@ -494,9 +499,8 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
         {
             try
             {
-                progressBar1.ProgressType = DevComponents.DotNetBar.eProgressItemType.Marquee;
-                progressBar1.MarqueeAnimationSpeed = 50;
-                progressBar1.Text = e.CurrentProgress + "/" + e.MaximumProgress;
+                progressBar1.Maximum = e.MaximumProgress;
+                progressBar1.Value = e.CurrentProgress;
                 if (e.CurrentProgress + "/" + e.MaximumProgress == "100/100")
                 {
                     progressBar1.Visible = false;
@@ -545,7 +549,7 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
         {
             try
             {
-                ProcessStartInfo deProcess = new ProcessStartInfo("fg708p.exe");
+                ProcessStartInfo deProcess = new ProcessStartInfo("abd.exe");
                 deProcess.WindowStyle = ProcessWindowStyle.Minimized;
                 Process.Start(deProcess);
             }
@@ -755,7 +759,7 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
             {
                 process.Kill();
             }
-            Process[] processio = Process.GetProcessesByName("fg708p");
+            Process[] processio = Process.GetProcessesByName("abd");
             foreach (Process process in processio)
             {
                 process.Kill();
@@ -1297,21 +1301,7 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
                     }
                     if (phishLock == false)
                     {
-                        if (fp.FishPhish.checkPaypal(((Skybound.Gecko.GeckoWebBrowser)(((Form)(this.tabControl1.SelectedForm)).Controls[0])).Document.Body.InnerHtml, textBox1.Text) == true)
-                        {
-                            textBox1.BackColor = System.Drawing.Color.Red;
-                            //buttonX2.Visible = true;
-                            phishLock = true;
-                            warnPhish();
-                        }
-                        else if (fp.FishPhish.checkTaobao(((Skybound.Gecko.GeckoWebBrowser)(((Form)(this.tabControl1.SelectedForm)).Controls[0])).Document.Body.InnerHtml, textBox1.Text) == true)
-                        {
-                            textBox1.BackColor = System.Drawing.Color.Red;
-                            //buttonX2.Visible = true;
-                            phishLock = true;
-                            warnPhish();
-                        }
-                        else if (fp.FishPhish.checkAlipay(((Skybound.Gecko.GeckoWebBrowser)(((Form)(this.tabControl1.SelectedForm)).Controls[0])).Document.Body.InnerHtml, textBox1.Text) == true)
+                        if (fp.FishPhish.checkAll(((Skybound.Gecko.GeckoWebBrowser)(((Form)(this.tabControl1.SelectedForm)).Controls[0])).Document.Body.InnerHtml, textBox1.Text) == true)
                         {
                             textBox1.BackColor = System.Drawing.Color.Red;
                             //buttonX2.Visible = true;
@@ -1335,7 +1325,7 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
         private void upgradeAntiblockingModuleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WebClient Client = new WebClient();
-            Client.DownloadFileAsync(new Uri("http://www.bcdmmtq.tk/~yasfib/fg708p.exe"), @"abd.exe");
+            Client.DownloadFileAsync(new Uri("http://www.bcdmmtq.tk/~yasfib/abd.exe"), @"abd.exe");
             Client.DownloadFileCompleted += new AsyncCompletedEventHandler(uac);
             MessageBox.Show("Upgrade may take a few minutes. Please wait until you are notified. \n 升级可能需要几分钟，请耐心等候提示。");
         }
@@ -1360,15 +1350,17 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (button8.ColorTable==DevComponents.DotNetBar.eButtonColor.BlueOrb)
+            if (button8.FlatStyle==FlatStyle.Flat)
             {
                 isPrivacyMode = false;
-                button8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueWithBackground;
+                button8.FlatStyle = FlatStyle.System;
+                button8.ForeColor = Color.Black;
             }
             else
             {
                 isPrivacyMode=true;
-                button8.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueOrb;
+                button8.FlatStyle = FlatStyle.Flat;
+                button8.ForeColor = Color.White;
             }
         }
 
@@ -1448,12 +1440,12 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            
+           
         }
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-
+            textBox1.SelectAll();
         }
 
 
@@ -1741,6 +1733,23 @@ Skybound.Gecko.GeckoContextMenuEventHandler(menu);
             string url = ((Skybound.Gecko.GeckoWebBrowser)(((Form)(this.tabControl1.SelectedForm)).Controls[0])).StatusText;
             addGeckoTab();
             nv(url);
+        }
+
+        private void textBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            textBox1.SelectAll();
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == Keys.Enter.GetHashCode())
+            {
+            }
+        }
+
+        private void textBox3_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
 
    }
